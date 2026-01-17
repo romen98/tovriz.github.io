@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<title>Товріз — портфоліо</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<style>
+:root {
+  --bg: #0a0a0a;
+  --card: #141414;
+  --text: #eaeaea;
+  --muted: #9a9a9a;
+  --accent: #00ff9c;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  background: var(--bg);
+  color: var(--text);
+  line-height: 1.6;
+}
+
+/* ---------- HEADER ---------- */
+header {
+  padding: 90px 20px;
+  text-align: center;
+  background: linear-gradient(180deg, #0f2b22 0%, #000 100%);
+}
+
+header h1 {
+  margin: 0;
+  font-size: 48px;
+  color: var(--accent);
+}
+
+header p {
+  max-width: 700px;
+  margin: 20px auto 0;
+  color: var(--muted);
+  font-size: 18px;
+}
+
+/* ---------- SECTIONS ---------- */
+section {
+  max-width: 1000px;
+  margin: auto;
+  padding: 60px 20px;
+}
+
+h2 {
+  color: var(--accent);
+  margin-bottom: 25px;
+}
+
+.card {
+  background: var(--card);
+  padding: 28px;
+  border-radius: 14px;
+  box-shadow: 0 0 30px rgba(0,0,0,0.5);
+  margin-bottom: 20px;
+}
+
+/* ---------- TIMELINE ---------- */
+.timeline {
+  border-left: 3px solid var(--accent);
+  padding-left: 25px;
+}
+
+.timeline-item {
+  margin-bottom: 30px;
+}
+
+.timeline-item span {
+  font-size: 14px;
+  color: var(--muted);
+}
+
+/* ---------- BADGES ---------- */
+.badge {
+  display: inline-block;
+  margin: 6px 8px 0 0;
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  color: var(--accent);
+  background: rgba(0,255,156,0.1);
+}
+
+/* ---------- FOOTER ---------- */
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  color: var(--muted);
+  border-top: 1px solid #222;
+}
+</style>
+</head>
+<body>
+
+<header>
+  <h1>Товріз</h1>
+  <p>
+    Контент-креатор та стрімер. Експерименти з форматами,
+    розвиток через помилки та постійний пошук власного стилю.
+  </p>
+</header>
+
+<section>
+  <h2>Про мене</h2>
+  <div class="card">
+    <p>
+      <b>Товріз</b> — творчий псевдонім <b>Олега Барабаша</b>,
+      який народився у місті <b>Нікополь</b> у 2011 році.
+    </p>
+    <p>
+      Головна мета — створення живого, чесного та
+      цікавого контенту без штучних методів просування.
+    </p>
+  </div>
+</section>
+
+<section>
+  <h2>Творчий шлях</h2>
+  <div class="card timeline">
+    <div class="timeline-item">
+      <span>16 листопада 2024</span>
+      <p>
+        Початок діяльності під псевдонімом <b>«Тамон»</b>.
+        Формат коротких відео з гумористичною та
+        динамічною подачею.
+      </p>
+    </div>
+
+    <div class="timeline-item">
+      <span>Кінець 2024</span>
+      <p>
+        Отримання першої аудиторії та первинної впізнаваності.
+        Усвідомлення потенціалу онлайн-контенту.
+      </p>
+    </div>
+
+    <div class="timeline-item">
+      <span>2025</span>
+      <p>
+        Перехід до стрімінгу, експерименти з форматами
+        та переосмислення підходу до розвитку каналу.
+      </p>
+    </div>
+  </div>
+</section>
+
+<section>
+  <h2>Виклики та досвід</h2>
+  <div class="card">
+    <p>
+      У процесі розвитку були допущені помилки,
+      повʼязані з некоректними методами просування.
+      Це призвело до блокування одного з каналів.
+    </p>
+
+    <p>
+      Ситуація стала важливим уроком і точкою зростання.
+      Після цього було прийнято рішення рухатися далі
+      виключно чесним шляхом.
+    </p>
+
+    <p>
+      Досвід допоміг краще зрозуміти правила платформ
+      та цінність органічної аудиторії.
+    </p>
+
+    <div class="badge">Досвід</div>
+    <div class="badge">Висновки</div>
+    <div class="badge">Розвиток</div>
+  </div>
+</section>
+
+<section>
+  <h2>Проєкти</h2>
+
+  <div class="card">
+    <h3>🎮 DragonLand</h3>
+    <p>
+      Власний ігровий сервер, робота з комʼюніті,
+      адміністрування та підтримка онлайн-проєкту.
+    </p>
+    <div class="badge">Minecraft</div>
+    <div class="badge">Community</div>
+    <div class="badge">Management</div>
+  </div>
+
+  <div class="card">
+    <h3>🎥 Контент «Тамон»</h3>
+    <p>
+      Короткі відео з авторською подачею,
+      експерименти з гумором та форматом.
+    </p>
+    <div class="badge">Short-form</div>
+    <div class="badge">Creative</div>
+    <div class="badge">Video</div>
+  </div>
+</section>
+
+<section>
+  <h2>Навички</h2>
+  <div class="card">
+    <div class="badge">Стрімінг</div>
+    <div class="badge">Монтаж</div>
+    <div class="badge">Робота з аудиторією</div>
+    <div class="badge">Креативне мислення</div>
+    <div class="badge">Самоаналіз</div>
+  </div>
+</section>
+
+<footer>
+  © Товріз · Портфоліо<br>
+  Мінімалізм. Чесність. Розвиток.
+</footer>
+
+</body>
+</html>
